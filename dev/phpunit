@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+php SymfonyApplication.php app:build-env -d true
+./vendor/bin/phpunit --testdox
