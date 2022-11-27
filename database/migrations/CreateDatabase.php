@@ -1,8 +1,8 @@
 <?php
 
-namespace Database\Migrations;
+namespace Atsmacode\CardGames\Database\Migrations;
 
-use CardGames\Traits\Connect;
+use Atsmacode\CardGames\Traits\Connect;
 use PDO;
 use PDOException;
 

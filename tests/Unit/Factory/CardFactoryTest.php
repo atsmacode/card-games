@@ -1,10 +1,10 @@
 <?php
 
-namespace Tests\Unit\Factory;
+namespace Atsmacode\CardGames\Tests\Unit\Factory;
 
-use CardGames\Constants\Card;
-use CardGames\Factory\CardFactory;
-use Tests\BaseTest;
+use Atsmacode\CardGames\Constants\Card;
+use Atsmacode\CardGames\Factory\CardFactory;
+use Atsmacode\CardGames\Tests\BaseTest;
 
 class CardFactoryTest extends BaseTest
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Database\Migrations;
+namespace Atsmacode\CardGames\Database\Migrations;
 
-use CardGames\Classes\Database;
+use Atsmacode\CardGames\Classes\Database;
 
 class CreateCards extends Database
 {

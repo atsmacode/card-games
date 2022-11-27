@@ -1,10 +1,10 @@
 <?php
 
-namespace Database\Seeders;
+namespace Atsmacode\CardGames\Database\Seeders;
 
-use CardGames\Classes\Database;
-use CardGames\Constants\Rank;
-use CardGames\Constants\Suit;
+use Atsmacode\CardGames\Classes\Database;
+use Atsmacode\CardGames\Constants\Rank;
+use Atsmacode\CardGames\Constants\Suit;
 
 class SeedCards extends Database
 {

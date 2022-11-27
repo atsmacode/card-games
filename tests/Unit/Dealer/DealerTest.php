@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\Unit\Dealer;
+namespace Atsmacode\CardGames\Tests\Unit\Dealer;
 
-use CardGames\Classes\Dealer\Dealer;
-use Tests\BaseTest;
+use Atsmacode\CardGames\Classes\Dealer\Dealer;
+use Atsmacode\CardGames\Tests\BaseTest;
 
 class DealerTest extends BaseTest
 {

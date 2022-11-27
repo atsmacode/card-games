@@ -1,6 +1,6 @@
 <?php
 
-namespace CardGames\Factory;
+namespace Atsmacode\CardGames\Factory;
 
 /**
  * Factory class suing Card constants as a reference

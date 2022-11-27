@@ -1,9 +1,9 @@
 <?php
 
-namespace CardGames\Classes\Deck;
+namespace Atsmacode\CardGames\Classes\Deck;
 
-use CardGames\Constants\Card;
-use CardGames\Factory\CardFactory;
+use Atsmacode\CardGames\Constants\Card;
+use Atsmacode\CardGames\Factory\CardFactory;
 
 class Deck
 {

@@ -2,7 +2,7 @@
 
 require './vendor/autoload.php';
 
-use CardGames\Console\Commands\BuildEnvironment;
+use Atsmacode\CardGames\Console\Commands\BuildEnvironment;
 use Symfony\Component\Console\Application;
 
 $application = new Application();

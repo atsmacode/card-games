@@ -1,6 +1,6 @@
 <?php
 
-namespace CardGames\Traits;
+namespace Atsmacode\CardGames\Traits;
 
 trait Connect
 {

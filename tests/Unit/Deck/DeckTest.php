@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\Unit\Deck;
+namespace Atsmacode\CardGames\Tests\Unit\Deck;
 
-use CardGames\Classes\Deck\Deck;
-use Tests\BaseTest;
+use Atsmacode\CardGames\Classes\Deck\Deck;
+use Atsmacode\CardGames\Tests\BaseTest;
 
 class DeckTest extends BaseTest
 {

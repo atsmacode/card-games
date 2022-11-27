@@ -1,6 +1,6 @@
 <?php
 
-namespace CardGames\Constants;
+namespace Atsmacode\CardGames\Constants;
 
 class Suit
 {

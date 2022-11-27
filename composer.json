@@ -10,14 +10,14 @@
     ],
     "autoload": {
         "psr-4": {
-            "CardGames\\": "app/",
-            "Database\\Migrations\\": "database/migrations/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Atsmacode\\CardGames\\": "app/",
+            "Atsmacode\\CardGames\\Database\\Migrations\\": "database/migrations/",
+            "Atsmacode\\CardGames\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Atsmacode\\CardGames\\Tests\\": "tests/"
         }
     },
     "require": {

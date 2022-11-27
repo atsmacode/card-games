@@ -1,8 +1,8 @@
 <?php
 
-namespace CardGames\Classes;
+namespace Atsmacode\CardGames\Classes;
 
-use CardGames\Traits\Connect;
+use Atsmacode\CardGames\Traits\Connect;
 use PDO;
 
 class Database
