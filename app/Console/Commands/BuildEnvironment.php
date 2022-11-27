@@ -3,7 +3,7 @@
 namespace Atsmacode\CardGames\Console\Commands;
 
 use Atsmacode\CardGames\Database\Migrations\CreateCards;
-use Atsmacode\CardGames\Database\Migrations\CreateDatabase;
+use Atsmacode\Orm\Database\Migrations\CreateDatabase;
 use Atsmacode\CardGames\Database\Seeders\SeedCards;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

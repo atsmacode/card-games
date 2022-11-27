@@ -2,7 +2,7 @@
 
 namespace Atsmacode\CardGames\Database\Migrations;
 
-use Atsmacode\CardGames\Classes\Database;
+use Atsmacode\Orm\Classes\Database;
 
 class CreateCards extends Database
 {

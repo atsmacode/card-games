@@ -2,7 +2,7 @@
 
 namespace Atsmacode\CardGames\Database\Seeders;
 
-use Atsmacode\CardGames\Classes\Database;
+use Atsmacode\Orm\Classes\Database;
 use Atsmacode\CardGames\Constants\Rank;
 use Atsmacode\CardGames\Constants\Suit;
 
