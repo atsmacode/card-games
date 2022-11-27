@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Classes\Database;
-use App\Constants\Rank;
-use App\Constants\Suit;
+use CardGames\Classes\Database;
+use CardGames\Constants\Rank;
+use CardGames\Constants\Suit;
 
 class SeedCards extends Database
 {

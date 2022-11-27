@@ -2,7 +2,7 @@
 
 namespace Database\Migrations;
 
-use App\Traits\Connect;
+use CardGames\Traits\Connect;
 use PDO;
 use PDOException;
 

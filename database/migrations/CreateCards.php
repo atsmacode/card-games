@@ -2,7 +2,7 @@
 
 namespace Database\Migrations;
 
-use App\Classes\Database;
+use CardGames\Classes\Database;
 
 class CreateCards extends Database
 {

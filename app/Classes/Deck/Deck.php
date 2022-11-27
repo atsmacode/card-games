@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Classes\Deck;
+namespace CardGames\Classes\Deck;
 
-use App\Constants\Card;
-use App\Factory\CardFactory;
+use CardGames\Constants\Card;
+use CardGames\Factory\CardFactory;
 
 class Deck
 {

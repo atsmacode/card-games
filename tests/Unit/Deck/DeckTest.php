@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\Deck;
 
-use App\Classes\Deck\Deck;
+use CardGames\Classes\Deck\Deck;
 use Tests\BaseTest;
 
 class DeckTest extends BaseTest

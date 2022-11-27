@@ -1,10 +1,8 @@
 <?php
 
-namespace App\Classes\Dealer;
+namespace CardGames\Classes\Dealer;
 
-use App\Classes\Deck\Deck;
-use App\Models\HandStreetCard;
-use App\Models\WholeCard;
+use CardGames\Classes\Deck\Deck;
 
 class Dealer
 {

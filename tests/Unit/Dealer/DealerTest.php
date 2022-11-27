@@ -2,15 +2,7 @@
 
 namespace Tests\Unit\Dealer;
 
-use App\Classes\Dealer\Dealer;
-use App\Constants\Card;
-use App\Factory\CardFactory;
-use App\Models\Hand;
-use App\Models\HandStreet;
-use App\Models\Player;
-use App\Models\Street;
-use App\Models\Table;
-use App\Models\TableSeat;
+use CardGames\Classes\Dealer\Dealer;
 use Tests\BaseTest;
 
 class DealerTest extends BaseTest

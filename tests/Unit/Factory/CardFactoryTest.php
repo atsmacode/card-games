@@ -2,8 +2,8 @@
 
 namespace Tests\Unit\Factory;
 
-use App\Constants\Card;
-use App\Factory\CardFactory;
+use CardGames\Constants\Card;
+use CardGames\Factory\CardFactory;
 use Tests\BaseTest;
 
 class CardFactoryTest extends BaseTest

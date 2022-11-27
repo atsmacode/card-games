@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Factory;
+namespace CardGames\Factory;
 
 /**
  * Factory class suing Card constants as a reference

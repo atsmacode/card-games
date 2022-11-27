@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Traits;
+namespace CardGames\Traits;
 
 trait Connect
 {
