@@ -1,8 +1,8 @@
 <?php
 
-namespace Atsmacode\CardGames\Classes\Dealer;
+namespace Atsmacode\CardGames\Dealer;
 
-use Atsmacode\CardGames\Classes\Deck\Deck;
+use Atsmacode\CardGames\Deck\Deck;
 
 class Dealer
 {

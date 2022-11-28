@@ -1,6 +1,6 @@
 <?php
 
-namespace Atsmacode\CardGames\Classes\Deck;
+namespace Atsmacode\CardGames\Deck;
 
 use Atsmacode\CardGames\Constants\Card;
 use Atsmacode\CardGames\Factory\CardFactory;

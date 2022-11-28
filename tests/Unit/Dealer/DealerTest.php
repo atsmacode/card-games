@@ -2,7 +2,7 @@
 
 namespace Atsmacode\CardGames\Tests\Unit\Dealer;
 
-use Atsmacode\CardGames\Classes\Dealer\Dealer;
+use Atsmacode\CardGames\Dealer\Dealer;
 use Atsmacode\CardGames\Tests\BaseTest;
 
 class DealerTest extends BaseTest

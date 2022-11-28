@@ -2,7 +2,7 @@
 
 namespace Atsmacode\CardGames\Tests\Unit\Deck;
 
-use Atsmacode\CardGames\Classes\Deck\Deck;
+use Atsmacode\CardGames\Deck\Deck;
 use Atsmacode\CardGames\Tests\BaseTest;
 
 class DeckTest extends BaseTest
