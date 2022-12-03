@@ -3,33 +3,36 @@
 namespace Atsmacode\CardGames\Console\Commands;
 
 use Atsmacode\CardGames\Database\Migrations\CreateCards;
-use Atsmacode\Orm\Database\Migrations\CreateDatabase;
+use Atsmacode\CardGames\Database\Migrations\CreateDatabase;
 use Atsmacode\CardGames\Database\Seeders\SeedCards;
+use Atsmacode\Framework\ConfigProvider;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputArgument;
 
 #[AsCommand(
-    name: 'app:build-env',
+    name: 'app:build-card-games',
     description: 'Populate the DB with all resources',
     hidden: false,
-    aliases: ['app:build-env']
+    aliases: ['app:build-card-games']
 )]
 
-class BuildEnvironment extends Command
+class BuildCardGames extends Command
 {
-
     private $buildClasses = [
         CreateDatabase::class,
         CreateCards::class,
-        SeedCards::class,
+        SeedCards::class
     ];
-    protected static $defaultName = 'app:build-env';
 
-    public function __construct(string $name = null)
+    protected static $defaultName = 'app:build-card-games';
+
+    public function __construct(string $name = null, ConfigProvider $configProvider)
     {
         parent::__construct($name);
+
+        $this->configProvider = $configProvider;
     }
 
     protected function configure(): void
@@ -48,7 +51,7 @@ class BuildEnvironment extends Command
 
         foreach($this->buildClasses as $class){
             foreach($class::$methods as $method){
-                (new $class())->{$method}();
+                (new $class($this->configProvider))->{$method}();
             }
         }
 

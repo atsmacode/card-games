@@ -25,7 +25,7 @@ Run the unit test suite:
 
 Drop, Create and Seed all tables. '-d true' is required to run this in test DB:
 
-> php dev/SymfonyApplication.php app:build-env -d true
+> php dev/CardGamesApp.php app:build-card-games -d true
 
 ## Windows
 Run the unit test suite:
@@ -34,7 +34,7 @@ Run the unit test suite:
 
 Drop, Create and Seed all tables. '-d true' is required to run this in test DB
 
-> php .\dev\SymfonyApplication.php app:build-env -d true
+> php .\dev\CardGamesApp.php app:build-card-games -d true
 
 # Configs
 

@@ -2,7 +2,7 @@
 
 namespace Atsmacode\CardGames\Database\Migrations;
 
-use Atsmacode\Orm\Classes\Database;
+use Atsmacode\Framework\Dbal\Database;
 
 class CreateCards extends Database
 {
@@ -22,12 +22,10 @@ class CreateCards extends Database
             )";
 
         try {
-            $this->connection->exec($sql);
+            $this->connection->executeQuery($sql);
         } catch(\PDOException $e) {
             error_log($e->getMessage());
         }
-
-        $this->connection = null;
     }
 
     public function createSuitsTable()
@@ -39,12 +37,10 @@ class CreateCards extends Database
         )";
 
         try {
-            $this->connection->exec($sql);
+            $this->connection->executeQuery($sql);
         } catch(\PDOException $e) {
             error_log($e->getMessage());
         }
-
-        $this->connection = null;
     }
 
     public function createCardsTable()
@@ -58,11 +54,9 @@ class CreateCards extends Database
         )";
 
         try {
-            $this->connection->exec($sql);
+            $this->connection->executeQuery($sql);
         } catch(\PDOException $e) {
             error_log($e->getMessage());
         }
-
-        $this->connection = null;
     }
 }

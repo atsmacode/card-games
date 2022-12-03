@@ -2,9 +2,9 @@
 
 namespace Atsmacode\CardGames\Database\Seeders;
 
-use Atsmacode\Orm\Classes\Database;
 use Atsmacode\CardGames\Constants\Rank;
 use Atsmacode\CardGames\Constants\Suit;
+use Atsmacode\Framework\Dbal\Database;
 
 class SeedCards extends Database
 {
@@ -25,13 +25,12 @@ class SeedCards extends Database
                 $stmt->bindParam(':name', $name);
                 $stmt->bindParam(':rankAbbreviation', $abbreviation);
                 $stmt->bindParam(':ranking', $ranking);
-                $stmt->execute();
+                $stmt->executeQuery();
             }
         } catch(\PDOException $e) {
             error_log($e->getMessage());
 
         }
-        $this->connection = null;
     }
 
     public function seedSuits()
@@ -49,7 +48,6 @@ class SeedCards extends Database
         } catch(\PDOException $e) {
             error_log($e->getMessage());
         }
-        $this->connection = null;
     }
 
     public function seedCards()
@@ -69,7 +67,5 @@ class SeedCards extends Database
         } catch(\PDOException $e) {
             error_log($e->getMessage());
         }
-
-        $this->connection = null;
     }
 }
