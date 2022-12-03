@@ -22,7 +22,7 @@
     },
     "require": {
         "symfony/console": "^6.0",
-        "atsmacode/framework": "1.0.4"
+        "atsmacode/framework": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5"
