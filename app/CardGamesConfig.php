@@ -4,18 +4,12 @@ namespace Atsmacode\CardGames;
 
 class CardGamesConfig
 {
+    const CONFIG_REF = 'config/card_games.php';
+
     public function __invoke()
     {
-        $dbTest = require($GLOBALS['THE_ROOT'] . 'config/db_card_games_test.php');
-        $db     = require($GLOBALS['THE_ROOT'] . 'config/db_card_games.php');
+        $config  = require($GLOBALS['THE_ROOT'] . CardGamesConfig::CONFIG_REF);
 
-        $dbConfig = [
-            'db' => [
-                'test' => $dbTest,
-                'live' => $db,
-            ],
-        ];
-
-        return $dbConfig;
+        return $config['card_games'];
     }
 }
