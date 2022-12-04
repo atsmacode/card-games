@@ -3,7 +3,7 @@
 namespace Atsmacode\CardGames\Tests;
 
 use Atsmacode\CardGames\CardGamesConfigProvider;
-use Doctrine\DBAL\DriverManager;
+use Atsmacode\Framework\DatabaseProvider;
 use PHPUnit\Framework\TestCase;
 
 abstract class BaseTest extends TestCase
@@ -15,12 +15,6 @@ abstract class BaseTest extends TestCase
         $config              = (new CardGamesConfigProvider)->get();
         $env                 = 'test';
 
-        $GLOBALS['connection'] = DriverManager::getConnection([
-            'dbname'   => $config['db'][$env]['database'],
-            'user'     => $config['db'][$env]['username'],
-            'password' => $config['db'][$env]['password'],
-            'host'     => $config['db'][$env]['servername'],
-            'driver'   => $config['db'][$env]['driver'],
-        ]);
+        $GLOBALS['connection'] = DatabaseProvider::getConnection($config, $env);
     }
 }

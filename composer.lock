@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "atsmacode/framework",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/atsmacode/framework.git",
-                "reference": "f6d85c7635345ed543c3a129139aef931b272e04"
+                "reference": "a9d6c2fa314bb7a80e61ec11e37741074c7e6b26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atsmacode/framework/zipball/f6d85c7635345ed543c3a129139aef931b272e04",
-                "reference": "f6d85c7635345ed543c3a129139aef931b272e04",
+                "url": "https://api.github.com/repos/atsmacode/framework/zipball/a9d6c2fa314bb7a80e61ec11e37741074c7e6b26",
+                "reference": "a9d6c2fa314bb7a80e61ec11e37741074c7e6b26",
                 "shasum": ""
             },
             "require": {
@@ -45,9 +45,9 @@
             "description": "Repo with base DB, Model and Config resources",
             "support": {
                 "issues": "https://github.com/atsmacode/framework/issues",
-                "source": "https://github.com/atsmacode/framework/tree/v1.0.7"
+                "source": "https://github.com/atsmacode/framework/tree/v1.0.8"
             },
-            "time": "2022-12-04T08:35:19+00:00"
+            "time": "2022-12-04T10:05:50+00:00"
         },
         {
             "name": "brick/varexporter",
