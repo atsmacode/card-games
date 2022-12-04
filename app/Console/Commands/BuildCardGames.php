@@ -2,13 +2,11 @@
 
 namespace Atsmacode\CardGames\Console\Commands;
 
-use Atsmacode\CardGames\CardGamesConfigProvider;
 use Atsmacode\CardGames\Database\Migrations\CreateCards;
 use Atsmacode\CardGames\Database\Migrations\CreateDatabase;
 use Atsmacode\CardGames\Database\Seeders\SeedCards;
 use Atsmacode\Framework\ConfigProvider;
 use Atsmacode\Framework\DatabaseProvider;
-use Doctrine\DBAL\DriverManager;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
