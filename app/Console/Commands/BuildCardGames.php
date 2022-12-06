@@ -3,10 +3,12 @@
 namespace Atsmacode\CardGames\Console\Commands;
 
 use Atsmacode\CardGames\Database\Migrations\CreateCards;
-use Atsmacode\CardGames\Database\Migrations\CreateDatabase;
+use Atsmacode\Framework\Migrations\CreateDatabase;
 use Atsmacode\CardGames\Database\Seeders\SeedCards;
-use Atsmacode\Framework\ConfigProvider;
-use Atsmacode\Framework\DatabaseProvider;
+use Atsmacode\Framework\Database\ConnectionInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\ServiceManager;
+use PDO;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -29,11 +31,17 @@ class BuildCardGames extends Command
 
     protected static $defaultName = 'app:build-card-games';
 
-    public function __construct(string $name = null, ConfigProvider $configProvider)
-    {
+    public function __construct(
+        string $name = null,
+        ServiceManager $container,
+        FactoryInterface $testDbFactory,
+        FactoryInterface $legacyTestDbFactory
+    ) {
         parent::__construct($name);
 
-        $this->configProvider = $configProvider;
+        $this->container           = $container;
+        $this->testDbFactory       = $testDbFactory;
+        $this->legacyTestDbFactory = $legacyTestDbFactory;
     }
 
     protected function configure(): void
@@ -44,21 +52,24 @@ class BuildCardGames extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        unset($GLOBALS['dev']);
+        $dev = $input->getOption('-d') === 'true' ?: false;
 
-        $GLOBALS['THE_ROOT'] = '';
-        $dev                 = $input->getOption('-d') === 'true' ?: false;
-        $GLOBALS['dev']      = $dev ? $dev : null;
-        $config              = $this->configProvider->get();
-        $env                 = 'live';
+        if ($dev) { $this->container->setFactory(ConnectionInterface::class, new $this->testDbFactory); }
 
-        if (isset($GLOBALS['dev'])) { $env = 'test'; }
-
-        $GLOBALS['connection'] = DatabaseProvider::getConnection($config, $env);
+        $connection = $this->container->get(ConnectionInterface::class);
 
         foreach($this->buildClasses as $class){
-            foreach($class::$methods as $method){
-                (new $class($this->configProvider))->{$method}();
+            /** @todo Remove reliance on PDO for creating/dropping schema */
+            if (CreateDatabase::class === $class) {
+                if ($dev) { $this->container->setFactory(PDO::class, new $this->legacyTestDbFactory); }
+
+                foreach ($class::$methods as $method) {
+                    (new $class($this->container->get(PDO::class)))->{$method}();
+                }
+            } else {
+                foreach ($class::$methods as $method) {
+                    (new $class($connection))->{$method}();
+                }
             }
         }
 

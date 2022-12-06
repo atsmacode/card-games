@@ -4,7 +4,7 @@ namespace Atsmacode\CardGames\Database\Seeders;
 
 use Atsmacode\CardGames\Constants\Rank;
 use Atsmacode\CardGames\Constants\Suit;
-use Atsmacode\Framework\Dbal\Database;
+use Atsmacode\Framework\Database\Database;
 
 class SeedCards extends Database
 {

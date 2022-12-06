@@ -2,7 +2,7 @@
 
 namespace Atsmacode\CardGames\Database\Migrations;
 
-use Atsmacode\Framework\Pdo\Database;
+use Atsmacode\Framework\Database\Database;
 
 class CreateDatabase extends Database
 {
