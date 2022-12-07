@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atsmacode/framework.git",
-                "reference": "6a523168b47338138fff6e797d1de1f442294054"
+                "reference": "eb5dd082fb70753b296da71b443a96f45b1ba487"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atsmacode/framework/zipball/6a523168b47338138fff6e797d1de1f442294054",
-                "reference": "6a523168b47338138fff6e797d1de1f442294054",
+                "url": "https://api.github.com/repos/atsmacode/framework/zipball/eb5dd082fb70753b296da71b443a96f45b1ba487",
+                "reference": "eb5dd082fb70753b296da71b443a96f45b1ba487",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                 "issues": "https://github.com/atsmacode/framework/issues",
                 "source": "https://github.com/atsmacode/framework/tree/PKR-9"
             },
-            "time": "2022-12-06T18:30:27+00:00"
+            "time": "2022-12-07T07:12:48+00:00"
         },
         {
             "name": "brick/varexporter",
