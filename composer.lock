@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83715d3935230266d2537840f2b320bb",
+    "content-hash": "8c495395d6337eccf4e4544feb627ea5",
     "packages": [
         {
             "name": "atsmacode/framework",
-            "version": "dev-PKR-9",
+            "version": "v1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/atsmacode/framework.git",
@@ -46,7 +46,7 @@
             "description": "Repo with base DB, Model and Config resources",
             "support": {
                 "issues": "https://github.com/atsmacode/framework/issues",
-                "source": "https://github.com/atsmacode/framework/tree/PKR-9"
+                "source": "https://github.com/atsmacode/framework/tree/v1.0.10"
             },
             "time": "2022-12-07T07:12:48+00:00"
         },
@@ -3254,9 +3254,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "atsmacode/framework": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
