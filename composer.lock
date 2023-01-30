@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c495395d6337eccf4e4544feb627ea5",
+    "content-hash": "4f31aa92a91ccaa09d1d2312d0c67d63",
     "packages": [
         {
             "name": "atsmacode/framework",
-            "version": "v1.0.10",
+            "version": "v1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/atsmacode/framework.git",
-                "reference": "eb5dd082fb70753b296da71b443a96f45b1ba487"
+                "reference": "1087953df67d105e6321d3d8028e565c8e30b462"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atsmacode/framework/zipball/eb5dd082fb70753b296da71b443a96f45b1ba487",
-                "reference": "eb5dd082fb70753b296da71b443a96f45b1ba487",
+                "url": "https://api.github.com/repos/atsmacode/framework/zipball/1087953df67d105e6321d3d8028e565c8e30b462",
+                "reference": "1087953df67d105e6321d3d8028e565c8e30b462",
                 "shasum": ""
             },
             "require": {
@@ -46,9 +46,9 @@
             "description": "Repo with base DB, Model and Config resources",
             "support": {
                 "issues": "https://github.com/atsmacode/framework/issues",
-                "source": "https://github.com/atsmacode/framework/tree/v1.0.10"
+                "source": "https://github.com/atsmacode/framework/tree/v1.0.12"
             },
-            "time": "2022-12-07T07:12:48+00:00"
+            "time": "2023-01-30T14:06:49+00:00"
         },
         {
             "name": "brick/varexporter",
