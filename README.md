@@ -38,15 +38,30 @@ Drop, Create and Seed all tables. '-d true' is required to run this in test DB
 
 # Configs
 
-You need to add db.php and db-test.php to configure your local DB credentials, like so:
+You need to add card_games.php to configure your local DB credentials, like so:
 
 ```
 <?php
 
 return [
-    'servername' => "localhost",
-    'username' => "DB_USER",
-    'password' => "DB_PASSWORD",
-    'database' => "card_game_test"
+    'card_games' => [
+        'db' => [
+            'live' => [
+                'servername' => 'localhost',
+                'username'   => 'DB_USER',
+                'password'   => 'DB_PASSWORD',
+                'database'   => 'card_games',
+                'driver'     => 'pdo_mysql',
+            ],
+            'test' => [
+                'servername' => 'localhost',
+                'username'   => 'DB_USER',
+                'password'   => 'DB_PASSWORD',
+                'database'   => 'card_games_test',
+                'driver'     => 'pdo_mysql',
+            ],
+        ],
+    ],
 ];
+
 ```

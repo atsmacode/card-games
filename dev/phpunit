@@ -1,3 +1,3 @@
 #!/usr/bin/bash
-php SymfonyApplication.php app:build-env -d true
+php dev/CardGamesApp.php app:build-card-games -d true
 ./vendor/bin/phpunit --testdox
