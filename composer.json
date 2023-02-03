@@ -22,7 +22,7 @@
     },
     "require": {
         "symfony/console": "^6.0",
-        "atsmacode/framework": "^1.0",
+        "atsmacode/framework": "^2.0",
         "laminas/laminas-servicemanager": "^3.20"
     },
     "require-dev": {

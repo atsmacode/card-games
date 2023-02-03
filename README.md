@@ -6,7 +6,7 @@
 
 ## MySQL
 
-8.0.13
+8.0.13 | 5.7.33
 
 ## Vue.Js
 
@@ -21,7 +21,7 @@
 ## Linux
 Run the unit test suite:
 
->dev/phpunit
+> dev/phpunit
 
 Drop, Create and Seed all tables. '-d true' is required to run this in test DB:
 
@@ -30,7 +30,7 @@ Drop, Create and Seed all tables. '-d true' is required to run this in test DB:
 ## Windows
 Run the unit test suite:
 
->.\dev\runtests.bat
+> .\dev\runtests.bat
 
 Drop, Create and Seed all tables. '-d true' is required to run this in test DB
 
