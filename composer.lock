@@ -46,15 +46,9 @@
             "description": "Repo with base DB, Model and Config resources",
             "support": {
                 "issues": "https://github.com/atsmacode/framework/issues",
-<<<<<<< HEAD
                 "source": "https://github.com/atsmacode/framework/tree/v2.0.0"
             },
             "time": "2023-02-03T18:11:24+00:00"
-=======
-                "source": "https://github.com/atsmacode/framework/tree/v1.0.13"
-            },
-            "time": "2023-02-02T18:25:55+00:00"
->>>>>>> 75ad6dab385a49a21f58f60f70feb787d91e0387
         },
         {
             "name": "brick/varexporter",
