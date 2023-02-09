@@ -6,11 +6,10 @@ use Atsmacode\CardGames\Deck\Deck;
 
 class Dealer
 {
+    public array $deck;
+    public array $card;
 
-    public $deck;
-    public $card;
-
-    public function setDeck($deck = null)
+    public function setDeck(array $deck = null): self
     {
         if ($deck) {
             $this->deck = $deck;
@@ -21,49 +20,62 @@ class Dealer
         return $this;
     }
 
-    public function getDeck()
+    public function getDeck(): array
     {
         return $this->deck;
     }
 
-    public function shuffle()
+    public function shuffle(): self
     {
         shuffle($this->deck);
 
         return $this;
     }
 
-    public function pickCard(string $rank = null, string $suit = null)
+    public function pickCard(string $rank = null, string $suit = null): self
     {
-        if($rank === null && $suit === null){
-            $card = array_shift($this->deck);
-
-            $this->card = $card;
-
-            $reject = array_filter($this->deck, function($value) use($card){
-                return $value !== $card;
-            });
-            $this->deck = array_values($reject);
-
-            return $this;
+        if (null === $rank && null === $suit) {
+            return $this->pickNextCard();
         }
 
-        $filter = array_filter($this->deck, function($value) use($rank, $suit){
-            return $value['rank'] === $rank && $value['suit'] === $suit;
-        });
-        $this->card = array_values($filter)[0];
+        return $this->pickSpecificCard($rank, $suit);
+    }
 
-        $card = $this->card;
-        $reject = array_filter($this->deck, function($value) use($card){
+    public function getCard(): array
+    {
+        return $this->card;
+    }
+
+    private function pickNextCard(): self
+    {
+        $card = array_shift($this->deck);
+
+        $this->card = $card;
+
+        $reject = array_filter($this->deck, function($value) use($card) {
             return $value !== $card;
         });
+
         $this->deck = array_values($reject);
 
         return $this;
     }
 
-    public function getCard()
+    private function pickSpecificCard(string $rank, string $suit): self
     {
-        return $this->card;
+        $filter = array_filter($this->deck, function($value) use($rank, $suit) {
+            return $value['rank'] === $rank && $value['suit'] === $suit;
+        });
+
+        $this->card = array_values($filter)[0];
+        $card       = $this->card;
+
+        $reject = array_filter($this->deck, function($value) use($card) {
+            return $value !== $card;
+        });
+
+        $this->deck = array_values($reject);
+
+        return $this;
     }
 }
