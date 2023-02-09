@@ -18,6 +18,8 @@ class Rank
     const QUEEN_RANK_ID = 12;
     const KING_RANK_ID  = 13;
 
+    const ACE_HIGH_RANK_ID = 14;
+
     const ACE = [
         'rank_id'           => self::ACE_RANK_ID,
         'rank'              => 'Ace',
