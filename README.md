@@ -1,3 +1,13 @@
+# About
+
+This package contains resources that can in theory be used to build any traditional 52 deck card game.
+
+It consists of:
+
+ - A migration to insert Cards, Ranks and Suits into a database
+ - Card constants with IDs mapped to the database rows to assist writing unit tests and logic
+ - A Dealer class based on the constants to shuffle and deal cards and hold a Deck array
+
 # Environment
 
 ## PHP
@@ -6,15 +16,7 @@
 
 ## MySQL
 
-8.0.13 | 5.7.33
-
-## Vue.Js
-
-^3.2.39
-
-## Node.Js
-
-18.12.1
+8.0.13
 
 # Commands
 
