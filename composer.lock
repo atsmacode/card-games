@@ -4,28 +4,28 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9fdeb3196e493ac8d04b70d0e2323dc",
+    "content-hash": "3b82ccdaf9a2e02156aaf74218b93393",
     "packages": [
         {
             "name": "atsmacode/framework",
-            "version": "v2.0.7",
+            "version": "v2.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/atsmacode/framework.git",
-                "reference": "0b53366d0d9a5d67b25c307f13695d4ebfbf492d"
+                "reference": "281a1163d4c17958faae2a4d416198ed5e00be0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atsmacode/framework/zipball/0b53366d0d9a5d67b25c307f13695d4ebfbf492d",
-                "reference": "0b53366d0d9a5d67b25c307f13695d4ebfbf492d",
+                "url": "https://api.github.com/repos/atsmacode/framework/zipball/281a1163d4c17958faae2a4d416198ed5e00be0a",
+                "reference": "281a1163d4c17958faae2a4d416198ed5e00be0a",
                 "shasum": ""
             },
             "require": {
                 "doctrine/dbal": "^3.5",
                 "laminas/laminas-config-aggregator": "^1.12",
                 "laminas/laminas-servicemanager": "^3.19",
-                "monolog/monolog": "^3.3",
-                "symfony/console": "^6.0"
+                "monolog/monolog": "^1.22 || ^2.0 || ^3.0",
+                "symfony/console": "5.4.* || ^6.0 || ^7.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.5"
@@ -47,9 +47,9 @@
             "description": "Repo with base DB, Model and Config resources",
             "support": {
                 "issues": "https://github.com/atsmacode/framework/issues",
-                "source": "https://github.com/atsmacode/framework/tree/v2.0.7"
+                "source": "https://github.com/atsmacode/framework/tree/v2.0.10"
             },
-            "time": "2023-02-25T09:40:55+00:00"
+            "time": "2025-03-26T06:34:18+00:00"
         },
         {
             "name": "brick/varexporter",
@@ -3356,10 +3356,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
